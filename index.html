@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeLab - Execute & Test Code Instantly</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/material-ocean.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/python/python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/htmlmixed/htmlmixed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/clike/clike.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/php/php.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/ruby/ruby.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/go/go.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/swift/swift.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/rust/rust.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">CODELAB</div>
+            <div class="header-right">
+                <div class="status-badge">
+                    <div class="status-dot"></div>
+                    <span>Server Online</span>
+                </div>
+                <a href="https://paypal.me/sansvargscorp" target="_blank" class="donate-btn">Support Us</a>
+            </div>
+        </header>
+
+        <section class="hero">
+            <h1>EXECUTE<br><span class="gradient-text">CODE INSTANTLY</span></h1>
+            <p>Run code in 10+ languages instantly. Premium code execution platform.</p>
+        </section>
+
+        <section class="editor-section">
+            <div class="glass-container">
+                <div class="editor-header">
+                    <div class="language-selector">
+                        <select id="lang">
+                            <option value="javascript">JavaScript</option>
+                            <option value="python">Python</option>
+                            <option value="java">Java</option>
+                            <option value="cpp">C++</option>
+                            <option value="csharp">C#</option>
+                            <option value="php">PHP</option>
+                            <option value="ruby">Ruby</option>
+                            <option value="go">Go</option>
+                            <option value="swift">Swift</option>
+                            <option value="rust">Rust</option>
+                        </select>
+                    </div>
+                    <div class="editor-controls">
+                        <button class="control-btn" id="clear">Clear All</button>
+                        <button class="control-btn" id="reset">Reset</button>
+                        <button class="control-btn run-button" id="run">▶ Run</button>
+                    </div>
+                </div>
+                <div class="editor-workspace">
+                    <div class="code-pane">
+                        <div class="pane-label">Code Editor</div>
+                        <textarea id="code"></textarea>
+                    </div>
+                    <div class="output-pane">
+                        <div class="pane-label">Output</div>
+                        <div class="output-display" id="out"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 CodeLab · All-in-One Code Execution Platform</p>
+            <p style="margin-top: 0.5rem;">Open Source · <a href="https://paypal.me/sansvargscorp" target="_blank">Support</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
