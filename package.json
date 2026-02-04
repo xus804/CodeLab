@@ -1,0 +1,12 @@
+{
+  "name": "codelab-modular",
+  "version": "1.0.0",
+  "description": "Code execution platform (modular version)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["compiler", "code", "execution"],
+  "author": "",
+  "license": "MIT"
+}
